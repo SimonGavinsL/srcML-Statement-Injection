@@ -1,0 +1,57 @@
+<ns0:unit xmlns:ns0="http://www.srcML.org/srcML/src" filename="Input.java" language="Java" revision="1.0.0"><ns0:class><ns0:specifier>public</ns0:specifier> class <ns0:name>Input</ns0:name> <ns0:block>{
+
+    <ns0:function><ns0:type><ns0:specifier>public</ns0:specifier> <ns0:specifier>static</ns0:specifier> <ns0:name>void</ns0:name></ns0:type> <ns0:name>main</ns0:name><ns0:parameter_list>(<ns0:parameter><ns0:decl><ns0:type><ns0:name><ns0:name>String</ns0:name><ns0:index>[]</ns0:index></ns0:name></ns0:type> <ns0:name>args</ns0:name></ns0:decl></ns0:parameter>)</ns0:parameter_list> <ns0:block>{<ns0:block_content>
+
+        <ns0:decl_stmt><ns0:decl><ns0:type><ns0:name>int</ns0:name></ns0:type> <ns0:name>a</ns0:name> <ns0:init>= <ns0:expr><ns0:literal type="number">0</ns0:literal></ns0:expr></ns0:init></ns0:decl>, <ns0:decl><ns0:type ref="prev" /><ns0:name>e</ns0:name></ns0:decl>, <ns0:decl><ns0:type ref="prev" /><ns0:name>f</ns0:name> <ns0:init>= <ns0:expr><ns0:literal type="number">3</ns0:literal></ns0:expr></ns0:init></ns0:decl>;</ns0:decl_stmt>
+
+        <expr_stmt><expr><call><name><name>System</name><operator>.</operator><name>out</name><operator>.</operator><name>println</name></name><argument_list>(<argument><expr><literal type="string">"a = "</literal><operator> + </operator><name>a</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+
+        <expr_stmt><expr><call><name><name>System</name><operator>.</operator><name>out</name><operator>.</operator><name>println</name></name><argument_list>(<argument><expr><literal type="string">"f = "</literal><operator> + </operator><name>f</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+
+        <ns0:decl_stmt><ns0:decl><ns0:type><ns0:name>int</ns0:name></ns0:type> <ns0:name>b</ns0:name></ns0:decl>, <ns0:decl><ns0:type ref="prev" /><ns0:name>c</ns0:name></ns0:decl>;</ns0:decl_stmt>
+
+        <ns0:decl_stmt><ns0:decl><ns0:type><ns0:name>int</ns0:name></ns0:type> <ns0:name>g</ns0:name> <ns0:init>= <ns0:expr><ns0:name>c</ns0:name> <ns0:operator>=</ns0:operator> <ns0:name>a</ns0:name> <ns0:operator>=</ns0:operator> <ns0:literal type="number">1</ns0:literal></ns0:expr></ns0:init></ns0:decl>;</ns0:decl_stmt>
+
+        <expr_stmt><expr><call><name><name>System</name><operator>.</operator><name>out</name><operator>.</operator><name>println</name></name><argument_list>(<argument><expr><literal type="string">"g = "</literal><operator> + </operator><name>g</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+
+        <ns0:expr_stmt><ns0:expr><ns0:name>b</ns0:name> <ns0:operator>=</ns0:operator> <ns0:literal type="number">1</ns0:literal></ns0:expr>;</ns0:expr_stmt>
+        <expr_stmt><expr><call><name><name>System</name><operator>.</operator><name>out</name><operator>.</operator><name>println</name></name><argument_list>(<argument><expr><literal type="string">"b = "</literal><operator> + </operator><name>b</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+        <ns0:expr_stmt><ns0:expr><ns0:name>g</ns0:name> <ns0:operator>=</ns0:operator> <ns0:name>c</ns0:name> <ns0:operator>=</ns0:operator> <ns0:name>a</ns0:name> <ns0:operator>=</ns0:operator> <ns0:literal type="number">1</ns0:literal></ns0:expr>;</ns0:expr_stmt>
+        <expr_stmt><expr><call><name><name>System</name><operator>.</operator><name>out</name><operator>.</operator><name>println</name></name><argument_list>(<argument><expr><literal type="string">"g = "</literal><operator> + </operator><name>g</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+        <expr_stmt><expr><call><name><name>System</name><operator>.</operator><name>out</name><operator>.</operator><name>println</name></name><argument_list>(<argument><expr><literal type="string">"c = "</literal><operator> + </operator><name>c</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+        <expr_stmt><expr><call><name><name>System</name><operator>.</operator><name>out</name><operator>.</operator><name>println</name></name><argument_list>(<argument><expr><literal type="string">"a = "</literal><operator> + </operator><name>a</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+        <ns0:expr_stmt><ns0:expr><ns0:name>b</ns0:name> <ns0:operator>=</ns0:operator> <ns0:operator>++</ns0:operator><ns0:name>c</ns0:name></ns0:expr>;</ns0:expr_stmt>
+
+        <expr_stmt><expr><call><name><name>System</name><operator>.</operator><name>out</name><operator>.</operator><name>println</name></name><argument_list>(<argument><expr><literal type="string">"b = "</literal><operator> + </operator><name>b</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+
+        <expr_stmt><expr><call><name><name>System</name><operator>.</operator><name>out</name><operator>.</operator><name>println</name></name><argument_list>(<argument><expr><literal type="string">"c = "</literal><operator> + </operator><name>c</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+
+        <ns0:expr_stmt><ns0:expr><ns0:operator>++</ns0:operator><ns0:name>a</ns0:name></ns0:expr>;</ns0:expr_stmt>
+
+        <expr_stmt><expr><call><name><name>System</name><operator>.</operator><name>out</name><operator>.</operator><name>println</name></name><argument_list>(<argument><expr><literal type="string">"a = "</literal><operator> + </operator><name>a</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+
+        <ns0:expr_stmt><ns0:expr><ns0:name>a</ns0:name> <ns0:operator>+=</ns0:operator> <ns0:literal type="number">3</ns0:literal></ns0:expr>;</ns0:expr_stmt>
+
+        <expr_stmt><expr><call><name><name>System</name><operator>.</operator><name>out</name><operator>.</operator><name>println</name></name><argument_list>(<argument><expr><literal type="string">"a = "</literal><operator> + </operator><name>a</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+
+        <ns0:for>for<ns0:control>(<ns0:init><ns0:decl><ns0:type><ns0:name>int</ns0:name></ns0:type> <ns0:name>i</ns0:name> <ns0:init>= <ns0:expr><ns0:literal type="number">0</ns0:literal></ns0:expr></ns0:init></ns0:decl>;</ns0:init> <ns0:condition><ns0:expr><ns0:name>i</ns0:name> <ns0:operator>&lt;</ns0:operator> <ns0:literal type="number">10</ns0:literal></ns0:expr>;</ns0:condition> <ns0:incr><ns0:expr><ns0:operator>++</ns0:operator><ns0:name>i</ns0:name></ns0:expr></ns0:incr>)</ns0:control> <ns0:block>{<ns0:block_content>
+            <ns0:decl_stmt><ns0:decl><ns0:type><ns0:name>String</ns0:name></ns0:type> <ns0:name>aString</ns0:name> <ns0:init>= <ns0:expr><ns0:literal type="string">"hello"</ns0:literal></ns0:expr></ns0:init></ns0:decl>;</ns0:decl_stmt>
+        <expr_stmt><expr><call><name><name>System</name><operator>.</operator><name>out</name><operator>.</operator><name>println</name></name><argument_list>(<argument><expr><literal type="string">"aString = "</literal><operator> + </operator><name>aString</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+        </ns0:block_content>}</ns0:block></ns0:for>
+
+        <ns0:decl_stmt><ns0:decl><ns0:type><ns0:name>Boolean</ns0:name></ns0:type> <ns0:name>flag</ns0:name></ns0:decl>;</ns0:decl_stmt>
+        <ns0:switch>switch<ns0:condition>(<ns0:expr><ns0:name>flag</ns0:name></ns0:expr>)</ns0:condition> <ns0:block>{<ns0:block_content>
+            <ns0:case>case <ns0:expr><ns0:operator>(</ns0:operator><ns0:name>a</ns0:name> <ns0:operator>=</ns0:operator> <ns0:literal type="number">5</ns0:literal><ns0:operator>)</ns0:operator></ns0:expr>:</ns0:case>
+              <expr_stmt><expr><call><name><name>System</name><operator>.</operator><name>out</name><operator>.</operator><name>println</name></name><argument_list>(<argument><expr><literal type="string">"a = "</literal><operator> + </operator><name>a</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+              <ns0:comment type="line">// code block</ns0:comment>
+              <ns0:break>break;</ns0:break>
+            <ns0:case>case <ns0:expr><ns0:operator>(</ns0:operator><ns0:name>b</ns0:name> <ns0:operator>=</ns0:operator> <ns0:literal type="number">10</ns0:literal><ns0:operator>)</ns0:operator></ns0:expr>:</ns0:case>
+              <expr_stmt><expr><call><name><name>System</name><operator>.</operator><name>out</name><operator>.</operator><name>println</name></name><argument_list>(<argument><expr><literal type="string">"b = "</literal><operator> + </operator><name>b</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+              <ns0:comment type="line">// code block</ns0:comment>
+              <ns0:break>break;</ns0:break>
+            <ns0:default>default:</ns0:default>
+              <ns0:comment type="line">// code block</ns0:comment>
+          </ns0:block_content>}</ns0:block></ns0:switch>
+        
+    </ns0:block_content>}</ns0:block></ns0:function>
+}</ns0:block></ns0:class></ns0:unit>
